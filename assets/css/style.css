@@ -287,8 +287,5 @@ footer div {
 }
 
 
-@media only screen and (max-width: 1654px) {
-    .section_text_header {
-        margin-top: 700px;
-    }
+
 }
