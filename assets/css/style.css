@@ -1,0 +1,96 @@
+/*! =========================================
+/*!        Allgemeines                     
+/*!========================================= */
+
+@font-face {
+    font-family: workSans;
+    src: url("../fonts/WorkSans-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    background-color: bisque;
+}
+
+body {
+    font-size: 1.5rem;
+    font-family: workSans;
+}
+
+/*TODO =========================================
+/*TODO        Header                     
+/*TODO========================================= */
+
+header {
+    display: flex;
+    height: 100vh;
+}
+
+.section_Logo {
+    display: flex;
+    margin: 3rem 0 0 3rem;
+    gap: 1rem;
+
+}
+
+.section_Logo img {
+    width: 4rem;
+    align-self: flex-start;
+}
+
+.section_Logo div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#bgImage_header {
+    background-image: url("../img/ilustracion1.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 50vh;
+}
+
+.p_DesignProject {
+    font-size: 2rem;
+}
+
+
+
+.section_text_header {
+    width: 60%;
+    align-self: flex-end;
+
+}
+
+.section_text_header h1 {
+    font-size: 5rem;
+    padding-bottom: 1rem;
+}
+
+.p_scroll {
+    padding-top: 15rem;
+    color: #F63874;
+}
+
+
+
+
+/** =========================================
+/**        Main                     
+/**========================================= */
+
+
+
+
+/*? =========================================
+/*?        Footer                     
+/*?========================================= */
