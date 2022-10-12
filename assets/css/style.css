@@ -286,6 +286,103 @@ footer div {
     }
 }
 
+@media only screen and (max-width: 1660px) {
+    header {
+        height: 60vh;
+    }
+}
+
+@media only screen and (max-width: 1374px) {
+    header {
+        height: 40vh;
+    }
+}
+
+@media only screen and (max-width: 1374px) {
+    header {
+        height: 30vh;
+    }
+}
+
+@media only screen and (max-width: 766px) {
+    header {
+        height: 30vh;
+    }
+}
+
+@media only screen and (max-width: 800px) {
 
 
+    header {
+        height: 80vh;
+        align-items: center;
+        /* background-color: #ff3571; */
+        background-position: center 23%;
+
+    }
+
+    .section_Logo {
+        /* background-color: aqua; */
+        width: 100%;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .section_Logo div {}
+
+    .section_text_header p {
+        width: 30rem;
+    }
+
+    .p_WebDesigner {
+        font-size: 3rem;
+    }
+
+    .section_text_header h1 {
+        margin-top: 25rem;
+    }
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .article_everyIdea h2 {
+        font-size: 3rem;
+        width: 70%;
+    }
+
+    .article_everyIdea {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .section_text_header {
+        display: flex;
+        flex-direction: column;
+        margin-top: 55%;
+        width: 100%;
+    }
+
+    .section_text_header h1 {
+        font-size: 4rem;
+        width: 80%;
+    }
+
+    .section_text_header p {
+
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    html {
+        font-size: 5px;
+    }
+
+    .section_findYourProblem article {
+        margin: 0;
+    }
 }
