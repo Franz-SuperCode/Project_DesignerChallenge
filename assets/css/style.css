@@ -7,6 +7,11 @@
     src: url("../fonts/Roboto-Regular.ttf");
 }
 
+@font-face {
+    font-family: roboto_bold;
+    src: url("../fonts/Roboto-Bold.ttf");
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,14 +19,18 @@
 }
 
 html {
-    font-size: 10px;
     /* background-color: bisque; */
 }
 
 body {
-    font-size: 1.5rem;
     font-family: roboto;
+    text-align: center;
 }
+
+img {
+    width: 20%;
+}
+
 
 
 /*TODO =========================================
@@ -31,260 +40,102 @@ body {
 header {
     display: flex;
     flex-direction: column;
-    background-image: url("../img/ilustracion1.png");
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: contain;
+}
+
+.blueIMG {
     width: 100%;
-    height: 75vh;
-    margin-bottom: 25vh;
-
+    max-width: 100%;
 }
 
-/*Flying Man*/
-
-.flyingMan {
-    width: 40%;
-    position: absolute;
-    top: -29rem;
-    left: 23rem;
-    animation-name: flyingman;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    aspect-ratio: 1/1;
-    animation: 4s linear 0s infinite alternate flyingman;
-}
-
-
-@keyframes flyingman {
-    /* 0% {
-        right: 0px;
-        top: 0px;
-    }
-
-    25% {
-
-        right: 0px;
-        top: 25px;
-    }
-
-    50% {
-
-        right: 0px;
-        top: 50px;
-    }
-
-    75% {
-
-        right: 0px;
-        top: 80px;
-    }
-
-    100% {
-
-        right: 0px;
-        top: 150px;
-    } */
-
-    from {
-
-        transform: translateY(50%);
-    }
-
-    to {
-
-        transform: translateY(0);
-    }
-}
-
-
-
-
-.section_Logo {
+.section_logo {
     display: flex;
-    margin: 3rem 0 0 3rem;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
-    width: 25%;
-
+    margin: 2rem 0rem;
 }
 
-.section_Logo img {
-    width: 4rem;
-    align-self: flex-start;
+.section_logo img {
+    width: 8%;
 }
-
-.section_Logo div {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-
 
 .p_DesignProject {
-    font-size: 2rem;
+    font-family: roboto_bold;
 }
 
-
-
-.section_text_header {
-    width: 65rem;
-    margin: 22rem 0 0 15rem;
-
-
-}
-
-.section_text_header h1 {
-    font-size: 7rem;
-    padding-bottom: 1rem;
-}
-
-.section_text_header p {
-    width: 50rem;
+.p_WebDesigner {
+    text-align: left;
+    font-size: 1rem;
 }
 
 .p_scroll {
-    padding-top: 20rem;
-    color: #F63874;
+    margin-top: 3rem;
+    color: #F99CBC;
 }
 
+header article {
+    margin: 0 1rem;
+}
 
-
+header article p {
+    margin: 1rem 0;
+}
 
 /** =========================================
 /**        Main                     
 /**========================================= */
+main {
+    padding: 0 1.5rem;
+}
+
+.first_section {
+    width: 100%;
+}
+
+.first_section img {
+    width: 100%;
+}
 
 main h2 {
-    font-size: 4rem;
+    margin: 1rem 0;
 }
 
-.article_everyIdea {
-    display: flex;
-    justify-content: space-between;
-
+main article {
+    margin: 5rem 0;
 }
 
-.article_everyIdea h2 {
-    width: 20%;
-    /* margin-right: 20rem; */
-}
-
-.article_everyIdea p {
-    width: 50%;
-    line-height: 2.5rem;
-}
-
-.main_firstImages {
-    width: 100%;
-    height: 100vh;
-    object-fit: contain;
-}
-
-.article_withOnlyH2 {
-    margin: 10rem 0;
-    width: 55rem;
-
-}
-
-.section_titles {
-    /* background-color: aqua; */
+main article p {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
-
-.section_titles img {
-    width: 10%;
-    margin: 0 2rem 0 0;
-}
-
-.section_titles article {
-    /* background-color: #F63874; */
-    flex-wrap: wrap;
-    width: 35rem;
-
-}
-
-.main_divALL {
-    padding: 10%;
-}
-
-.section_titles div {
-    display: flex;
-    justify-content: space-between;
-    gap: 15%;
-    /* background-color: aquamarine; */
-    width: 100%;
-
-}
-
-.section_titles div p:nth-of-type(1) {
-    font-weight: bold;
-}
-
-.section_titles div p:nth-of-type(2) {
-    margin: 1rem 0 5rem 5.5rem;
-}
-
-.section_areYouReady p,
-.section_areYouReady h2 {
-    text-align: center;
-    margin: 5% auto;
-    width: 40%;
-}
-
-.allSections_articleAndImg {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin: 0 auto;
-
-}
-
-.section_findYourProblem {
-    display: flex;
     align-items: center;
-    /* background-color: #F63874; */
-    margin-top: 2rem;
-    justify-content: space-between;
+    gap: 1rem;
 }
 
-.section_findYourProblem article {
-    width: 45%;
-    height: 45rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin: 10rem;
+.section_titles p:nth-of-type(1) {
+    font-family: roboto_bold;
+    margin-bottom: 0.5rem;
 }
 
-.article_findYour {}
+/* ====== */
 
-.section_findYourProblem p:nth-of-type(1) {
-    font-size: 5rem;
-    color: #dddddd;
+.allSections_articleAndImg p:nth-of-type(1) {
+    color: #DDDDDD;
+    font-size: 2rem;
 }
 
-.section_findYourProblem p:nth-of-type(2),
-.section_findYourProblem p:nth-of-type(3) {
-    width: 95%;
-    margin-top: -5rem;
+.allSections_articleAndImg p:nth-of-type(2) {
+    font-family: roboto_bold;
+    margin-bottom: 0.5rem;
 }
 
 .img_big {
-    width: 45%;
+    width: 100%;
+    margin-top: 10rem;
 }
 
 .img_icons {
-    width: 7%;
-    /* margin: 10% 0 2% 0; */
+    width: 35%;
 }
-
-.order1 {
-    order: 1;
-}
-
 
 /*? =========================================
 /*?        Footer                     
@@ -294,154 +145,201 @@ footer section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    gap: 2rem;
 }
 
-input,
-button,
-footer h2,
-footer p {
-    width: 50%;
-    text-align: center;
-}
-
-footer h2 {
-    font-size: 5rem;
-    margin: 3%;
-}
-
-button {
-    padding: 0.5% 0;
-    margin: 0.5rem;
-    width: 10%;
+footer section button {
+    padding: 0.5rem 1.5rem;
     color: #fff;
     background-color: #ff3571;
     border: none;
 }
 
-input {
-    padding: 2rem 0;
-    margin: 3% 0 1% 0;
-    width: 30%;
+footer section input {
     border: none;
-    box-shadow: 0 0 50rem grey;
+    padding: 0.5rem 3rem;
+    box-shadow: 0 0 1rem grey;
 }
 
 footer div {
-    margin-top: 10%;
-    margin-bottom: 1%;
+    margin: 3rem 0 1rem 0;
 }
 
-
-@media only screen and (max-width: 1836px) {
-    .section_text_header h1 {
-        width: 50rem;
-    }
-}
-
-@media only screen and (max-width: 1788px) {
-    .section_text_header h1 {
-        width: 40rem;
-    }
-}
-
-@media only screen and (max-width: 1660px) {
-    header {
-        height: 60vh;
-    }
-}
-
-@media only screen and (max-width: 1374px) {
-    header {
-        height: 40vh;
-    }
-}
-
-@media only screen and (max-width: 1374px) {
-    header {
-        height: 30vh;
-    }
-}
-
-@media only screen and (max-width: 766px) {
-    header {
-        height: 30vh;
-    }
-}
-
-@media only screen and (max-width: 800px) {
+/*? =========================================
+/*?        Media Queries Desktop               
+/*?========================================= */
 
 
-    header {
-        height: 80vh;
-        align-items: center;
-        /* background-color: #ff3571; */
-        background-position: center 23%;
+@media only screen and (min-width: 600px) {
 
-    }
-
-    .section_Logo {
-        /* background-color: aqua; */
-        width: 100%;
-        justify-content: center;
-        margin-left: 0;
-    }
-
-    .section_Logo div {}
-
-    .section_text_header p {
-        width: 30rem;
-    }
-
-    .p_WebDesigner {
-        font-size: 3rem;
-    }
-
-    .section_text_header h1 {
-        margin-top: 25rem;
-    }
-
-    html,
     body {
-        overflow-x: hidden;
+        text-align: left;
+
     }
 
-    .article_everyIdea h2 {
-        font-size: 3rem;
+
+
+    header {
+        padding-left: 3rem;
+
+    }
+
+    .p_DesignProject {
+        font-size: 2rem;
+    }
+
+    .section_logo {
+        order: 1;
+        translate: -38% -42rem;
+    }
+
+
+    .section_logo img {
+        width: 5%;
+    }
+
+    .blueIMG {
+        width: 60%;
+        translate: 67%;
+    }
+
+    header article {
+        order: 2;
+        translate: 0 -35rem;
         width: 70%;
     }
 
-    .article_everyIdea {
-        flex-direction: column;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-
-    .section_text_header {
-        display: flex;
-        flex-direction: column;
-        margin-top: 55%;
-        width: 100%;
-    }
-
-    .section_text_header h1 {
-        font-size: 4rem;
-        width: 80%;
-    }
-
-    .section_text_header p {
-
+    header article p {
         width: 50%;
     }
-}
 
-@media only screen and (max-width: 500px) {
-    html {
-        font-size: 5px;
+    header h1 {
+        font-size: 4rem;
+        width: 55%;
     }
 
-    .section_findYourProblem article {
-        margin: 0;
+    /* ==== Main ===== */
+
+    main {
+        padding: 0 5rem;
+        overflow: hidden;
+    }
+
+    .p_scroll {
+        margin-top: 18rem;
+    }
+
+    .article_everyIdea {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+    }
+
+    .article_everyIdea p {
+        width: 50%;
+    }
+
+    .article_everyIdea h2 {
+        width: 25%;
+    }
+
+    main p {
+        line-height: 2;
+    }
+
+    main h2 {
+        font-size: 3rem;
+    }
+
+    .article_withOnlyH2 {
+        width: 50%;
+    }
+
+    /* ====== section_titles ========== */
+
+    .section_titles {
+        display: flex;
+    }
+
+    .section_titles div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div_startAsking {
+        width: 100%;
+        translate: 10%;
+    }
+
+    main article p {
+        flex-direction: row;
+        width: 70%;
+    }
+
+    .pWithImg {
+        translate: -14%;
+    }
+
+    .pWithImg img {
+        width: 10%;
+    }
+
+    .img_icons {
+        width: 10%;
+    }
+
+    .img_big {
+        width: 50%;
+    }
+
+    .section_findYourProblem {
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .order1 {
+        order: 1;
+    }
+
+    /* ======= Animation =========== */
+
+    .flyingMan {
+        width: 40%;
+        position: absolute;
+        translate: 150%;
+        overflow: hidden;
+
+    }
+
+    .animation {
+        animation-timing-function: linear;
+        animation-duration: 7s;
+        animation-name: man;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes man {
+
+        0% {
+            translate: 150% -100px;
+        }
+
+        50% {
+            translate: 150% 200px;
+        }
+
+        100% {
+            translate: 150% -100px;
+        }
+    }
+
+
+    /* ======= Footer =========== */
+    footer {
+        padding: 3rem;
+
     }
 }
